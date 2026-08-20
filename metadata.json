@@ -1,0 +1,10 @@
+{
+  "name": "AutoSight AI",
+  "description": "Futuristic AI-powered vehicle diagnostic web application for automobile garages, service centers, mechanics, and vehicle owners.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
