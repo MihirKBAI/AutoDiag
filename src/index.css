@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-void: #050608;
+    --bg-surface: #0a0c10;
+    --border-subtle: rgba(255, 255, 255, 0.05);
+    --border-glow: rgba(34, 211, 238, 0.4);
+    --cyan-glow: rgba(34, 211, 238, 0.6);
+  }
+
+  body {
+    background-color: #050608;
+    color: #e0e0e0;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Rajdhani', 'Space Grotesk', sans-serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Immersive UI Dot Matrix Pattern */
+.bg-dot-matrix {
+  background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.08) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+.bg-grid-cyber {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Glowing Telemetry Accents */
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
+}
+
+.glow-cyan-sm {
+  box-shadow: 0 0 8px rgba(34, 211, 238, 0.35);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+}
+
+.glow-red {
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.4);
+}
+
+/* Custom Scrollbar for Sleek HUD Feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050608;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
+
+/* Scanning Line Animation */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+.animate-scanline {
+  animation: scanline 4s linear infinite;
+}
