@@ -18,3 +18,8 @@ View your app in AI Studio: https://ai.studio/apps/9edad03d-cd21-43b4-bcec-39bf1
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+## Generate diagnostic report
+<img width="1024" height="1352" alt="image" src="https://github.com/user-attachments/assets/4a1fbc56-bcc2-4dc4-8c2e-244d05148e64" />
+
+## Image Processing
+Gemini 3.7 vision for image processing.
